@@ -11,6 +11,14 @@ models:
           - not_null
       - name: first_order_date
         description: NULL when a customer has not yet placed an order.
+      - name: first_name
+        description: First name
+        tests:
+          - not_null
+      - name: last_name
+        description: Last name
+        tests:
+          - not_null
 
   - name: stg_customers
     description: This model cleans up customer data
